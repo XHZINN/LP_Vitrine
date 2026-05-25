@@ -1,45 +1,47 @@
-# 🚀 Landing Page Base – Estrutura de Alta Conversão & SEO
+# Harvey Specter Advocacia - Landing Page Premium
 
-[![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=flat&logo=vercel)](https://vercel.com)
-[![SEO Otimizado](https://img.shields.io/badge/SEO-Otimizado-brightgreen)](#-estrat%C3%A9gia-de-seo-e-cro)
-[![HTML5](https://img.shields.io/badge/HTML5-Sem%C3%A2ntico-E34F26?logo=html5)](https://developer.mozilla.org)
-[![CSS3](https://img.shields.io/badge/CSS3-Moderno-1572B6?logo=css3)](https://developer.mozilla.org)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
 
-Este repositório contém a minha **Landing Page Base**, uma estrutura matriz ultra otimizada desenvolvida com o objetivo de servir como padrão de engenharia para projetos comerciais. Ela foi criada do zero focando em performance extrema, código limpo e as melhores práticas de SEO do mercado.
-
----
-
-## 🎯 Objetivo do Projeto
-
-Ter uma base sólida, rápida e modular que garanta notas máximas no **Google PageSpeed Insights** e que esteja pronta para ser clonada e personalizada para qualquer nicho de mercado ou cliente, reduzindo o tempo de desenvolvimento sem perder qualidade.
+Uma Landing Page institucional e de alta conversão projetada para o segmento jurídico de alto padrão. O projeto combina um design minimalista, elegante e responsivo com práticas avançadas de SEO local e acessibilidade web.
 
 ---
 
-## ⚡ Diferenciais Técnicos
+## 🎯 Objetivos do Projeto
 
-### 🔍 Estratégia de SEO e CRO
-* **HTML5 Semântico:** Uso rigoroso de tags estruturais (`<main>`, `<section>`, `<article>`, `<footer>`) para facilitar a leitura dos robôs do Google.
-* **Hierarquia de Cabeçalhos:** Organização perfeita de títulos (`<h1>` a `<h3>`) para relevância de palavras-chave.
-* **Acessibilidade básica:** Imagens com atributos `alt` descritivos e contraste de cores planejado.
-* **Copywriting & Foco em Conversão (CRO):** Seções desenhadas para guiar o usuário até a ação principal (CTA), como botões flutuantes de WhatsApp ou formulários de captura.
-
-### 💨 Performance & Infraestrutura
-* **Mobile-First:** Design totalmente responsivo, priorizando a experiência em smartphones.
-* **Carregamento Instantâneo:** Sem bibliotecas pesadas ou frameworks desnecessários. Código puro para abrir em menos de 1.5 segundos.
-* **Deploy Isolado:** Arquitetura pronta para publicação individualizada via Vercel, garantindo que o projeto de um cliente nunca exponha o código de outro.
+*   **Geração de Leads:** Estrutura focada em conversão rápida com chamadas para ação (CTAs) estratégicas para agendamento de consultas via WhatsApp/Formulário.
+*   **Autoridade de Marca:** Identidade visual sofisticada baseada em contrastes sutis, tipografia serifada clássica (`Cormorant Garamond`) e efeitos visuais como o *Noise Overlay*.
+*   **Performance Real:** Construído com código nativo (Vanilla HTML/CSS/JS), eliminando bibliotecas pesadas para garantir um carregamento quase instantâneo.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias e Recursos Utilizados
 
-* **Estruturação:** HTML5 Semântico
-* **Estilização:** CSS3 Avançado (Flexbox & Grid Layout)
-* **Interatividade:** JavaScript Assíncrono (ES6+)
-* **Hospedagem:** Vercel (Ambiente de Produção)
+*   **Estruturação:** HTML5 Semântico com foco em indexação e leitura limpa de código.
+*   **Estilização:** CSS3 Custom Properties (Variáveis), Layouts em Grid e Flexbox, animações de fade-in nativas e design totalmente responsivo (Mobile-First).
+*   **Efeitos Visuais:** Filtro estático de ruído analógico injetado via SVG inline para textura de fundo premium.
+*   **Comportamento:** JavaScript Vanilla para manipulação de estados do menu mobile e comportamento dinâmico do cabeçalho ao scroll.
 
 ---
 
-## 👤 Autor
+## 🚀 Diferenciais Técnicos (Produção-Ready)
 
-Desenvolvido por **XHZINN**.  
-Se você precisa de uma página que além de bonita, apareça no Google e converta visitantes em clientes, entre em contato!
+### 📈 SEO Otimizado & Dados Estruturados
+*   Uso de tags canônicas e Open Graph (OG) configurados para compartilhamento correto em redes sociais.
+*   Inclusão de marcação rica **JSON-LD (Schema.org)** do tipo `LegalService`. Isso permite que o Google entenda o endereço, telefone, horários e número de inscrição da OAB, exibindo o site em posições de destaque nos resultados de busca local.
+
+### ♿ Acessibilidade (Accessibility)
+*   Menu mobile totalmente navegável via teclado (`focus-visible`) e leitores de tela.
+*   Atributos dinâmicos como `aria-expanded` atualizados em tempo real via JavaScript.
+*   Relação correta de contraste de cores e uso estrito de tags ARIA (`role="navigation"`, `role="list"`, `aria-hidden`).
+
+---
+
+## 📦 Como Executar o Projeto
+
+Como o projeto foi desenvolvido em código puramente nativo, ele não necessita de compiladores ou instaladores de pacotes.
+
+1. Clone o repositório:
+```bash
+   git clone [https://github.com/seu-usuario/harvey-specter-advocacia.git](https://github.com/seu-usuario/harvey-specter-advocacia.git)
