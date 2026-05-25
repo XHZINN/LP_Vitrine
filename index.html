@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Primary -->
+  <title>Dr. Harvey Specter | Advocacia Especializada em Direito Civil e Trabalhista – São Paulo/SP</title>
+  <meta name="description" content="Escritório de advocacia em São Paulo com atuação em Direito Civil, Trabalhista e Empresarial. Atendimento personalizado, ético e comprometido com seus direitos. OAB/SP 000.000." />
+  <meta name="keywords" content="advogado São Paulo, escritório advocacia SP, direito civil, direito trabalhista, direito empresarial, consulta jurídica" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.rafaelmonteiro.adv.br/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.harveyspecter.adv.br/" />
+  <meta property="og:title" content="Dr. Harvey Specter | Advocacia em São Paulo" />
+  <meta property="og:description" content="Escritório de advocacia com atuação em Direito Civil, Trabalhista e Empresarial. Atendimento ético e comprometido com seus direitos." />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Harvey Specter Advocacia",
+    "description": "Escritório de advocacia em São Paulo especializado em Direito Civil, Trabalhista e Empresarial.",
+    "url": "https://www.rafaelmonteiro.adv.br",
+    "telephone": "+55-11-99999-9999",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Paulista, 1000, Conjunto 101",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "01310-100",
+      "addressCountry": "BR"
+    },
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "areaServed": "São Paulo",
+    "hasCredential": "OAB/SP 000.000"
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── RESET & VARIABLES ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:     #0a0f1e;
+      --navy-mid: #111827;
+      --navy-light: #1c2740;
+      --gold:     #b8913f;
+      --gold-light: #d4aa60;
+      --gold-pale: #f0dca0;
+      --cream:    #faf7f2;
+      --text:     #e8e2d6;
+      --text-muted: #8a8070;
+      --white:    #ffffff;
+      --ff-serif: 'Cormorant Garamond', Georgia, serif;
+      --ff-sans:  'Jost', sans-serif;
+      --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--ff-sans);
+      background: var(--navy);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ─── SCROLLBAR ─── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--navy); }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+    /* ─── UTILITY ─── */
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 32px; }
+    .gold { color: var(--gold); }
+    .section-label {
+      font-family: var(--ff-sans);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--gold);
+    }
+    .section-title {
+      font-family: var(--ff-serif);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--cream);
+      margin-top: 16px;
+    }
+    .section-title em { font-style: italic; color: var(--gold-light); }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 40px;
+      background: var(--gold);
+      color: var(--navy);
+      font-family: var(--ff-sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-primary::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(255,255,255,0.12);
+      transform: translateX(-101%);
+      transition: transform 0.35s ease;
+    }
+    .btn-primary:hover::after { transform: translateX(0); }
+    .btn-primary:hover { background: var(--gold-light); }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 36px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-family: var(--ff-sans);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: var(--transition);
+      background: transparent;
+    }
+    .btn-outline:hover { background: rgba(184,145,63,0.1); }
+
+    /* ─── NOISE OVERLAY ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.5;
+    }
+
+    /* ─── HEADER / NAV ─── */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 24px 0;
+      transition: background 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+    }
+    header.scrolled {
+      background: rgba(10, 15, 30, 0.96);
+      backdrop-filter: blur(16px);
+      padding: 16px 0;
+      box-shadow: 0 1px 0 rgba(184,145,63,0.2);
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      flex-direction: column;
+    }
+    .logo-name {
+      font-family: var(--ff-serif);
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--cream);
+      line-height: 1;
+    }
+    .logo-sub {
+      font-size: 0.6rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 4px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 40px;
+    }
+    .nav-links a {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      transition: color 0.25s;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .nav-links a:hover { color: var(--cream); }
+    .nav-links a:hover::after { transform: scaleX(1); }
+    .nav-cta {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(184,145,63,0.4);
+      padding: 10px 24px;
+      transition: var(--transition);
+    }
+    .nav-cta:hover { background: rgba(184,145,63,0.1); border-color: var(--gold); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer;background: transparent; border: none; padding: 8px; }
+    .hamburger span { display: block; width: 24px; height: 1px; background: var(--cream); transition: var(--transition); }
+    .hamburger:focus-visible { outline: 1px solid var(--gold);}
+    /* Animação hambúrguer → X */
+    .hamburger.active span:nth-child(1) {
+      transform: translateY(6px) rotate(45deg);
+    }
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    .hamburger.active span:nth-child(3) {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 100px;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 70% at 70% 50%, rgba(184,145,63,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(184,145,63,0.05) 0%, transparent 50%),
+        linear-gradient(180deg, var(--navy) 0%, var(--navy-mid) 100%);
+    }
+    .hero-lines {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(184,145,63,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(184,145,63,0.06) 1px, transparent 1px);
+      background-size: 80px 80px;
+      mask-image: radial-gradient(ellipse 70% 80% at 60% 40%, black 0%, transparent 70%);
+    }
+    .hero-ornament {
+      position: absolute;
+      right: -80px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 680px;
+      height: 680px;
+      border: 1px solid rgba(184,145,63,0.12);
+      border-radius: 50%;
+    }
+    .hero-ornament::before {
+      content: '';
+      position: absolute;
+      inset: 40px;
+      border: 1px solid rgba(184,145,63,0.08);
+      border-radius: 50%;
+    }
+    .hero-ornament::after {
+      content: '';
+      position: absolute;
+      inset: 80px;
+      border: 1px solid rgba(184,145,63,0.06);
+      border-radius: 50%;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 660px;
+      animation: fadeUp 1s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(32px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-oab {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 7px 18px;
+      border: 1px solid rgba(184,145,63,0.3);
+      border-radius: 2px;
+      margin-bottom: 36px;
+      animation: fadeUp 1s 0.1s ease both;
+    }
+    .hero-oab span {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .hero-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); opacity: 0.5; }
+    .hero-title {
+      font-family: var(--ff-serif);
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 300;
+      line-height: 1.08;
+      color: var(--cream);
+      margin-bottom: 28px;
+      animation: fadeUp 1s 0.2s ease both;
+    }
+    .hero-title em { font-style: italic; color: var(--gold-light); display: block; }
+    .hero-desc {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--text-muted);
+      max-width: 500px;
+      line-height: 1.8;
+      margin-bottom: 48px;
+      animation: fadeUp 1s 0.3s ease both;
+    }
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      animation: fadeUp 1s 0.4s ease both;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 48px;
+      margin-top: 72px;
+      padding-top: 48px;
+      border-top: 1px solid rgba(184,145,63,0.15);
+      animation: fadeUp 1s 0.5s ease both;
+    }
+    .stat-value {
+      font-family: var(--ff-serif);
+      font-size: 2.4rem;
+      font-weight: 300;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+    .scroll-hint {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      opacity: 0.4;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(8px); }
+    }
+    .scroll-hint span { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; }
+    .scroll-hint svg { width: 16px; height: 16px; }
+
+    /* ─── DIVIDER ─── */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(184,145,63,0.3), transparent);
+      margin: 0;
+    }
+
+    /* ─── SOBRE ─── */
+    #sobre {
+      padding: 120px 0;
+      background: var(--navy-mid);
+      position: relative;
+      overflow: hidden;
+    }
+    #sobre::before {
+      content: 'ADVOCACIA';
+      position: absolute;
+      top: 50%;
+      left: -40px;
+      transform: translateY(-50%) rotate(-90deg);
+      font-family: var(--ff-serif);
+      font-size: 8rem;
+      font-weight: 300;
+      color: rgba(184,145,63,0.04);
+      white-space: nowrap;
+      pointer-events: none;
+    }
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      align-items: center;
+    }
+    .sobre-image-wrap {
+      position: relative;
+    }
+    .sobre-image-frame {
+      width: 100%;
+      aspect-ratio: 4/5;
+      background: var(--navy-light);
+      position: relative;
+      overflow: hidden;
+    }
+    .sobre-image-frame::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(184,145,63,0.15) 0%, transparent 50%),
+        linear-gradient(to bottom, transparent 60%, rgba(10,15,30,0.8) 100%);
+      z-index: 1;
+    }
+    .sobre-image-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 16px;
+      color: rgba(184,145,63,0.3);
+    }
+    .sobre-foto-advogado{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+    .sobre-image-placeholder p { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; }
+    .sobre-corner {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-color: var(--gold);
+      border-style: solid;
+      border-width: 0;
+    }
+    .sobre-corner.tl { top: -16px; left: -16px; border-top-width: 1px; border-left-width: 1px; }
+    .sobre-corner.br { bottom: -16px; right: -16px; border-bottom-width: 1px; border-right-width: 1px; }
+    .sobre-badge {
+      position: absolute;
+      bottom: -28px;
+      right: -28px;
+      width: 120px;
+      height: 120px;
+      background: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 2;
+    }
+    .sobre-badge-num {
+      font-family: var(--ff-serif);
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1;
+    }
+    .sobre-badge-txt {
+      font-size: 0.55rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--navy);
+      text-align: center;
+    }
+    .sobre-text p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.9;
+      margin-bottom: 20px;
+    }
+    .sobre-text p strong { color: var(--cream); font-weight: 500; }
+    .sobre-credentials {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 40px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(184,145,63,0.15);
+    }
+    .cred-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+    .cred-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    /* ─── ÁREAS ─── */
+    #areas {
+      padding: 120px 0;
+      background: var(--navy);
+    }
+    .areas-header {
+      text-align: center;
+      margin-bottom: 72px;
+    }
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+    .area-card {
+      background: var(--navy-mid);
+      padding: 48px 40px;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition);
+      cursor: default;
+      border: 1px solid rgba(184,145,63,0.06);
+    }
+    .area-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+    .area-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 100%, rgba(184,145,63,0.08) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .area-card:hover { transform: translateY(-4px); }
+    .area-card:hover::before { transform: scaleX(1); }
+    .area-card:hover::after { opacity: 1; }
+    .area-icon {
+      width: 52px;
+      height: 52px;
+      border: 1px solid rgba(184,145,63,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 28px;
+      color: var(--gold);
+      position: relative;
+      z-index: 1;
+    }
+    .area-icon svg { width: 24px; height: 24px; }
+    .area-num {
+      position: absolute;
+      top: 24px;
+      right: 28px;
+      font-family: var(--ff-serif);
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: rgba(184,145,63,0.07);
+      line-height: 1;
+    }
+    .area-name {
+      font-family: var(--ff-serif);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+    .area-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      position: relative;
+      z-index: 1;
+    }
+    .area-subareas {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(184,145,63,0.1);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      position: relative;
+      z-index: 1;
+    }
+    .area-tag {
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(184,145,63,0.08);
+      padding: 4px 10px;
+      border-radius: 1px;
+    }
+
+    /* ─── PROCESSO ─── */
+    #processo {
+      padding: 120px 0;
+      background: var(--navy-mid);
+      position: relative;
+    }
+    .processo-header { margin-bottom: 72px; }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+    }
+    .steps::before {
+      content: '';
+      position: absolute;
+      top: 32px;
+      left: calc(12.5%);
+      right: calc(12.5%);
+      height: 1px;
+      background: linear-gradient(90deg, var(--gold) 0%, rgba(184,145,63,0.2) 100%);
+    }
+    .step {
+      padding: 0 24px;
+      position: relative;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .step.visible { opacity: 1; transform: translateY(0); }
+    .step:nth-child(2) { transition-delay: 0.15s; }
+    .step:nth-child(3) { transition-delay: 0.3s; }
+    .step:nth-child(4) { transition-delay: 0.45s; }
+    .step-num {
+      width: 64px;
+      height: 64px;
+      background: var(--navy);
+      border: 1px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--ff-serif);
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: var(--gold);
+      margin-bottom: 28px;
+      position: relative;
+    }
+    .step-num::after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      right: -4px;
+      bottom: -4px;
+      border: 1px solid rgba(184,145,63,0.2);
+      z-index: -1;
+    }
+    .step-title {
+      font-family: var(--ff-serif);
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin-bottom: 12px;
+    }
+    .step-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.8; }
+
+    /* ─── AVISO OAB ─── */
+    .oab-notice {
+      background: rgba(184,145,63,0.06);
+      border: 1px solid rgba(184,145,63,0.2);
+      border-left: 3px solid var(--gold);
+      padding: 20px 28px;
+      margin-top: 64px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .oab-notice strong { color: var(--gold); }
+
+    /* ─── CONTATO ─── */
+    #contato {
+      padding: 120px 0;
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+    }
+    #contato::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(184,145,63,0.06) 0%, transparent 70%);
+    }
+    .contato-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      align-items: start;
+    }
+    .contato-info h3 {
+      font-family: var(--ff-serif);
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin-bottom: 32px;
+    }
+    .info-items { display: flex; flex-direction: column; gap: 28px; }
+    .info-item { display: flex; gap: 20px; align-items: flex-start; }
+    .info-icon {
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(184,145,63,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+    .info-icon svg { width: 18px; height: 18px; }
+    .info-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+    .info-value { font-size: 0.9rem; color: var(--text-muted); }
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 48px;
+      padding: 18px 36px;
+      background: #25D366;
+      color: #fff;
+      font-family: var(--ff-sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      transition: var(--transition);
+    }
+    .whatsapp-btn:hover { background: #1ebe5d; transform: translateY(-2px); }
+    .whatsapp-btn svg { width: 22px; height: 22px; }
+    /* Form */
+    .contact-form { display: flex; flex-direction: column; gap: 20px; }
+    .form-group { display: flex; flex-direction: column; gap: 8px; }
+    .form-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .form-input, .form-select, .form-textarea {
+      background: var(--navy-mid);
+      border: 1px solid rgba(184,145,63,0.15);
+      padding: 14px 18px;
+      color: var(--cream);
+      font-family: var(--ff-sans);
+      font-size: 0.88rem;
+      outline: none;
+      transition: border-color 0.25s;
+      -webkit-appearance: none;
+      width: 100%;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--gold);
+    }
+    .form-input::placeholder, .form-textarea::placeholder { color: var(--text-muted); opacity: 0.5; }
+    .form-select { color: var(--text-muted); cursor: pointer; }
+    .form-select option { background: var(--navy-mid); }
+    .form-textarea { resize: none; height: 120px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-disclaimer {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      opacity: 0.6;
+    }
+    .form-submit {
+      width: 100%;
+      padding: 18px;
+      background: var(--gold);
+      color: var(--navy);
+      font-family: var(--ff-sans);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .form-submit:hover { background: var(--gold-light); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--navy-mid);
+      padding: 60px 0 40px;
+      border-top: 1px solid rgba(184,145,63,0.12);
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 60px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(184,145,63,0.1);
+      margin-bottom: 32px;
+    }
+    .footer-brand .logo-name { font-size: 1.1rem; }
+    .footer-brand p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-top: 16px;
+      max-width: 280px;
+    }
+    .footer-col h4 {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      transition: color 0.25s;
+    }
+    .footer-col ul li a:hover { color: var(--cream); }
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p { font-size: 0.72rem; color: var(--text-muted); opacity: 0.5; }
+
+    /* ─── FLOATING WHATSAPP ─── */
+    .float-wa {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      width: 56px;
+      height: 56px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(37,211,102,0.3);
+      cursor: pointer;
+      z-index: 98;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .float-wa:hover { transform: scale(1.1); box-shadow: 0 12px 32px rgba(37,211,102,0.4); }
+    .float-wa svg { width: 28px; height: 28px; }
+    .float-wa-pulse {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: #25D366;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.7; }
+      100% { transform: scale(1.8); opacity: 0; }
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .sobre-grid { grid-template-columns: 1fr; gap: 60px; }
+      .sobre-image-wrap { max-width: 460px; margin: 0 auto; }
+      .areas-grid { grid-template-columns: 1fr 1fr; }
+      .steps { grid-template-columns: repeat(2, 1fr); gap: 48px; }
+      .steps::before { display: none; }
+      .contato-grid { grid-template-columns: 1fr; gap: 60px; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: fixed;
+        top: 72px; /* logo abaixo do header */
+        left: 0;
+        right: 0;
+        background: rgba(10, 15, 30, 0.98);
+        backdrop-filter: blur(16px);
+        border-top: 1px solid rgba(184,145,63,0.2);
+        border-bottom: 1px solid rgba(184,145,63,0.2);
+        z-index: 99;
+        padding: 8px 0;
+      }
+      .nav-links.open {
+        display: flex;
+      }
+      .nav-links li {
+        border-bottom: 1px solid rgba(184,145,63,0.08);
+      }
+      .nav-links li:last-child {
+        border-bottom: none;
+      }
+      .nav-links a {
+        display: block;
+        font-size: 0.78rem;
+        padding: 18px 32px;
+        color: var(--text-muted);
+        letter-spacing: 0.18em;
+      }
+      .nav-links a:hover {
+        color: var(--cream);
+        background: rgba(184,145,63,0.06);
+      }
+      .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .areas-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr; }
+      .hero-stats { flex-wrap: wrap; gap: 32px; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; gap: 40px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── HEADER ─── -->
+<header id="header">
+  <div class="container">
+    <nav role="navigation" aria-label="Menu principal">
+      <a href="#hero" class="logo" aria-label="Harvey Specter Advocacia - Início">
+        <span class="logo-name">Harvey Specter</span>
+        <span class="logo-sub">Advocacia & Consultoria</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#sobre">O Escritório</a></li>
+        <li><a href="#areas">Áreas de Atuação</a></li>
+        <li><a href="#processo">Como Funciona</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a href="#contato" class="nav-cta">Fale Conosco</a>
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="true">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- ─── HERO ─── -->
+<section id="hero" aria-labelledby="hero-title">
+  <div class="hero-bg"></div>
+  <div class="hero-lines" aria-hidden="true"></div>
+  <div class="hero-ornament" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-oab" aria-label="Registro OAB">
+        <span>OAB/SP 000.000</span>
+        <div class="hero-dot" aria-hidden="true"></div>
+        <span>Regularmente inscrito</span>
+      </div>
+      <h1 class="hero-title" id="hero-title">
+        Soluções jurídicas com
+        <em>ética e comprometimento</em>
+      </h1>
+      <p class="hero-desc">
+        Atendimento jurídico personalizado nas áreas de Direito Civil, Trabalhista e Empresarial.
+        Cada caso tratado com rigor técnico e atenção às suas necessidades reais.
+      </p>
+      <div class="hero-actions">
+        <a href="#contato" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          Agendar Consulta
+        </a>
+        <a href="#areas" class="btn-outline">Ver Áreas de Atuação</a>
+      </div>
+      <div class="hero-stats" role="list">
+        <div role="listitem">
+          <div class="stat-value">15+</div>
+          <div class="stat-label">Anos de Experiência</div>
+        </div>
+        <div role="listitem">
+          <div class="stat-value">800+</div>
+          <div class="stat-label">Casos Atendidos</div>
+        </div>
+        <div role="listitem">
+          <div class="stat-value">3</div>
+          <div class="stat-label">Áreas de Atuação</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" role="separator"></div>
+
+<!-- ─── SOBRE ─── -->
+<section id="sobre" aria-labelledby="sobre-title">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-image-wrap">
+        <div class="sobre-image-frame" role="img" aria-label="Foto do Dr. Harvey Specter">
+          <div class="sobre-image-placeholder">
+            <img src="imagens/download.jpg" alt="Harvey Specter", class="sobre-foto-advogado">
+            <p>Foto do advogado</p>
+          </div>
+        </div>
+        <div class="sobre-corner tl" aria-hidden="true"></div>
+        <div class="sobre-corner br" aria-hidden="true"></div>
+        <div class="sobre-badge" aria-label="Mais de 15 anos de experiência">
+          <span class="sobre-badge-num">15+</span>
+          <span class="sobre-badge-txt">Anos de<br>Experiência</span>
+        </div>
+      </div>
+      <div class="sobre-text">
+        <span class="section-label">O Escritório</span>
+        <h2 class="section-title" id="sobre-title">Comprometimento com a <em>sua causa</em></h2>
+        <p style="margin-top: 28px;">
+          O escritório <strong>Harvey Specter Advocacia</strong> foi fundado com o propósito de oferecer atendimento jurídico técnico, ético e humanizado, priorizando a compreensão integral de cada situação antes de qualquer orientação.
+        </p>
+        <p>
+          Com atuação em São Paulo e região, o escritório desenvolve soluções jurídicas fundamentadas em análise criteriosa dos fatos, aplicação rigorosa da legislação vigente e atenção constante às especificidades de cada cliente.
+        </p>
+        <p>
+          A advocacia aqui exercida é pautada pelo <strong>Código de Ética e Disciplina da OAB</strong>, mantendo sempre a independência profissional e o sigilo absoluto das informações compartilhadas.
+        </p>
+        <div class="sobre-credentials" role="list">
+          <div class="cred-item" role="listitem">
+            <div class="cred-dot" aria-hidden="true"></div>
+            <span>Inscrito na OAB/SP sob o nº 000.000</span>
+          </div>
+          <div class="cred-item" role="listitem">
+            <div class="cred-dot" aria-hidden="true"></div>
+            <span>Graduado pela Faculdade de Direito da USP</span>
+          </div>
+          <div class="cred-item" role="listitem">
+            <div class="cred-dot" aria-hidden="true"></div>
+            <span>Pós-graduado em Direito Empresarial – FGV/SP</span>
+          </div>
+          <div class="cred-item" role="listitem">
+            <div class="cred-dot" aria-hidden="true"></div>
+            <span>Membro da Comissão de Direito do Trabalho OAB/SP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" role="separator"></div>
+
+<!-- ─── ÁREAS ─── -->
+<section id="areas" aria-labelledby="areas-title">
+  <div class="container">
+    <div class="areas-header">
+      <span class="section-label">Atuação</span>
+      <h2 class="section-title" id="areas-title">Áreas de <em>atuação jurídica</em></h2>
+    </div>
+    <div class="areas-grid" role="list">
+      <!-- Direito Civil -->
+      <article class="area-card" role="listitem">
+        <span class="area-num" aria-hidden="true">01</span>
+        <div class="area-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 6l9-4 9 4v6c0 5.25-3.75 10.16-9 11.25C6.75 22.16 3 17.25 3 12V6z"/>
+          </svg>
+        </div>
+        <h3 class="area-name">Direito Civil</h3>
+        <p class="area-desc">Assessoria jurídica em relações civis, contratos, responsabilidade civil, família e sucessões, com atuação consultiva e contenciosa.</p>
+        <div class="area-subareas" aria-label="Subáreas">
+          <span class="area-tag">Contratos</span>
+          <span class="area-tag">Família</span>
+          <span class="area-tag">Sucessões</span>
+          <span class="area-tag">Responsabilidade Civil</span>
+        </div>
+      </article>
+      <!-- Direito Trabalhista -->
+      <article class="area-card" role="listitem">
+        <span class="area-num" aria-hidden="true">02</span>
+        <div class="area-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="7" width="20" height="14" rx="2"/>
+            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+            <line x1="12" y1="12" x2="12" y2="16"/>
+            <line x1="10" y1="14" x2="14" y2="14"/>
+          </svg>
+        </div>
+        <h3 class="area-name">Direito Trabalhista</h3>
+        <p class="area-desc">Representação de trabalhadores e empresas em relações laborais, rescisões, acordos coletivos e reclamações trabalhistas perante a Justiça do Trabalho.</p>
+        <div class="area-subareas" aria-label="Subáreas">
+          <span class="area-tag">Reclamações</span>
+          <span class="area-tag">Rescisões</span>
+          <span class="area-tag">Acordos</span>
+          <span class="area-tag">CLT</span>
+        </div>
+      </article>
+      <!-- Direito Empresarial -->
+      <article class="area-card" role="listitem">
+        <span class="area-num" aria-hidden="true">03</span>
+        <div class="area-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <h3 class="area-name">Direito Empresarial</h3>
+        <p class="area-desc">Consultoria jurídica para empresas nas áreas societária, contratual e compliance, com foco em prevenção de riscos e segurança jurídica nos negócios.</p>
+        <div class="area-subareas" aria-label="Subáreas">
+          <span class="area-tag">Societário</span>
+          <span class="area-tag">Compliance</span>
+          <span class="area-tag">M&A</span>
+          <span class="area-tag">Contratos</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="divider" role="separator"></div>
+
+<!-- ─── PROCESSO ─── -->
+<section id="processo" aria-labelledby="processo-title">
+  <div class="container">
+    <div class="processo-header">
+      <span class="section-label">Metodologia</span>
+      <h2 class="section-title" id="processo-title">Como <em>funciona o atendimento</em></h2>
+    </div>
+    <div class="steps" role="list">
+      <div class="step" role="listitem">
+        <div class="step-num" aria-hidden="true">01</div>
+        <h3 class="step-title">Primeiro Contato</h3>
+        <p class="step-desc">Preencha o formulário ou entre em contato por telefone para descrever brevemente a sua situação e agendar o atendimento.</p>
+      </div>
+      <div class="step" role="listitem">
+        <div class="step-num" aria-hidden="true">02</div>
+        <h3 class="step-title">Consulta Jurídica</h3>
+        <p class="step-desc">Reunião detalhada para análise dos fatos, documentos e circunstâncias do caso, com esclarecimento de dúvidas e orientações iniciais.</p>
+      </div>
+      <div class="step" role="listitem">
+        <div class="step-num" aria-hidden="true">03</div>
+        <h3 class="step-title">Análise e Estratégia</h3>
+        <p class="step-desc">Estudo aprofundado da questão jurídica, levantamento de precedentes e elaboração da melhor abordagem para o seu caso.</p>
+      </div>
+      <div class="step" role="listitem">
+        <div class="step-num" aria-hidden="true">04</div>
+        <h3 class="step-title">Acompanhamento</h3>
+        <p class="step-desc">Representação ativa durante todo o processo, com comunicação transparente sobre o andamento e as próximas etapas.</p>
+      </div>
+    </div>
+
+    <div class="oab-notice" role="note">
+      <strong>⚖ Aviso Legal (OAB/SP):</strong> A advocacia exercida neste escritório é regulamentada pelo Estatuto da OAB (Lei 8.906/94) e pelo Código de Ética e Disciplina da OAB.
+      As informações contidas neste site têm caráter exclusivamente informativo e não constituem aconselhamento jurídico. A contratação de serviços advocatícios está sujeita à celebração de contrato específico.
+      Não são realizadas promessas de resultados. OAB/SP nº 000.000.
+    </div>
+  </div>
+</section>
+
+<div class="divider" role="separator"></div>
+
+<!-- ─── CONTATO ─── -->
+<section id="contato" aria-labelledby="contato-title">
+  <div class="container">
+    <div class="contato-grid">
+      <!-- Info -->
+      <div class="contato-info">
+        <span class="section-label">Contato</span>
+        <h2 class="section-title" id="contato-title">Fale com <em>o escritório</em></h2>
+        <h3 style="margin-top: 40px;">Informações de contato</h3>
+        <div class="info-items" style="margin-top: 0;">
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="info-label">Telefone / WhatsApp</div>
+              <div class="info-value">(11) 99999-9999</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="info-label">E-mail</div>
+              <div class="info-value">contato@rafaelmonteiro.adv.br</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="info-label">Endereço</div>
+              <div class="info-value">Av. Paulista, 1000, Conj. 101<br>Bela Vista – São Paulo/SP</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="info-label">Horário de Atendimento</div>
+              <div class="info-value">Segunda a Sexta, 9h às 18h</div>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta." class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contato via WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.134.558 4.133 1.532 5.865L.053 23.8l6.035-1.493A11.96 11.96 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.37l-.359-.214-3.722.921.987-3.607-.234-.372A9.78 9.78 0 0 1 2.182 12C2.182 6.573 6.573 2.182 12 2.182S21.818 6.573 21.818 12 17.427 21.818 12 21.818z"/>
+          </svg>
+          Conversar no WhatsApp
+        </a>
+      </div>
+      <!-- Formulário -->
+      <div>
+        <form class="contact-form" id="contact-form" novalidate aria-label="Formulário de contato">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="nome">Nome completo *</label>
+              <input class="form-input" type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telefone">Telefone *</label>
+              <input class="form-input" type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required autocomplete="tel" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">E-mail *</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="area">Área de interesse *</label>
+            <select class="form-select" id="area" name="area" required>
+              <option value="" disabled selected>Selecione uma área</option>
+              <option value="civil">Direito Civil</option>
+              <option value="trabalhista">Direito Trabalhista</option>
+              <option value="empresarial">Direito Empresarial</option>
+              <option value="outro">Outro assunto</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="mensagem">Descreva brevemente a situação</label>
+            <textarea class="form-textarea" id="mensagem" name="mensagem" placeholder="Relate sua situação de forma resumida..."></textarea>
+          </div>
+          <p class="form-disclaimer">
+            Ao enviar este formulário, você concorda com o tratamento dos seus dados pessoais para fins de contato, conforme a LGPD (Lei 13.709/18). As informações enviadas são sigilosas e não serão compartilhadas com terceiros.
+          </p>
+          <button type="submit" class="form-submit">Solicitar Contato</button>
+          <div id="form-msg" style="display:none; margin-top:12px; font-size:0.82rem; color:var(--gold); text-align:center;" role="alert"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-name">Harvey Specter</span>
+          <span class="logo-sub">Advocacia & Consultoria</span>
+        </div>
+        <p>Atendimento jurídico ético, técnico e humanizado em São Paulo e região. OAB/SP nº 000.000.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#sobre">O Escritório</a></li>
+          <li><a href="#areas">Áreas de Atuação</a></li>
+          <li><a href="#processo">Como Funciona</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Áreas</h4>
+        <ul>
+          <li><a href="#areas">Direito Civil</a></li>
+          <li><a href="#areas">Direito Trabalhista</a></li>
+          <li><a href="#areas">Direito Empresarial</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Harvey Specter Advocacia. Todos os direitos reservados. OAB/SP 000.000.</p>
+      <p>Desenvolvido em conformidade com o Código de Ética e Disciplina da OAB.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ─── WHATSAPP FLUTUANTE ─── -->
+<a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta." class="float-wa" target="_blank" rel="noopener noreferrer" aria-label="Contato rápido via WhatsApp">
+  <div class="float-wa-pulse" aria-hidden="true"></div>
+  <svg viewBox="0 0 24 24" fill="white" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.134.558 4.133 1.532 5.865L.053 23.8l6.035-1.493A11.96 11.96 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.007-1.37l-.359-.214-3.722.921.987-3.607-.234-.372A9.78 9.78 0 0 1 2.182 12C2.182 6.573 6.573 2.182 12 2.182S21.818 6.573 21.818 12 17.427 21.818 12 21.818z"/>
+  </svg>
+</a>
+
+<script>
+
+  /* ─── HAMBURGER MENU ─── */
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks  = document.querySelector('.nav-links');
+  const header = document.getElementById('header');
+
+  function getHeaderHeight() {
+    return header.offsetHeight;
+  }
+
+  function openMenu() {
+    navLinks.style.top = getHeaderHeight() + 'px';
+    navLinks.classList.add('open');
+    hamburger.setAttribute('aria-expanded', 'true');
+    hamburger.classList.add('active');
+    document.body.style.overflow = '';  // sem travar scroll
+  }
+
+  function closeMenu() {
+    navLinks.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    hamburger.classList.remove('active');
+  }
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.contains('open') ? closeMenu() : openMenu();
+  });
+
+  // Fecha ao clicar em um link
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Fecha ao clicar fora do menu
+  document.addEventListener('click', (e) => {
+    if (!header.contains(e.target)) closeMenu();
+  });
+
+  // Atualiza posição do menu quando o header muda de tamanho (scroll)
+  window.addEventListener('scroll', () => {
+    if (navLinks.classList.contains('open')) {
+      navLinks.style.top = getHeaderHeight() + 'px';
+    }
+  }, { passive: true });
+
+  /* ─── HEADER SCROLL ─── */
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  /* ─── INTERSECTION OBSERVER (steps) ─── */
+  const steps = document.querySelectorAll('.step');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.2 });
+  steps.forEach(s => io.observe(s));
+
+  /* ─── FORM SUBMIT ─── */
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('.form-submit');
+    const msg = document.getElementById('form-msg');
+    const nome = document.getElementById('nome').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const tel = document.getElementById('telefone').value.trim();
+    const area = document.getElementById('area').value;
+    if (!nome || !email || !tel || !area) {
+      msg.style.display = 'block';
+      msg.style.color = '#e07070';
+      msg.textContent = 'Por favor, preencha todos os campos obrigatórios.';
+      return;
+    }
+    btn.textContent = 'Enviando...';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.textContent = 'Solicitar Contato';
+      btn.disabled = false;
+      msg.style.display = 'block';
+      msg.style.color = 'var(--gold)';
+      msg.textContent = '✓ Mensagem recebida! Entraremos em contato em breve.';
+      this.reset();
+    }, 1400);
+  });
+
+  /* ─── SMOOTH ANCHOR ─── */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  /* ─── PHONE MASK ─── */
+  document.getElementById('telefone').addEventListener('input', function() {
+    let v = this.value.replace(/\D/g, '').slice(0, 11);
+    if (v.length > 6) v = '(' + v.slice(0,2) + ') ' + v.slice(2,7) + '-' + v.slice(7);
+    else if (v.length > 2) v = '(' + v.slice(0,2) + ') ' + v.slice(2);
+    else if (v.length > 0) v = '(' + v;
+    this.value = v;
+  });
+</script>
+</body>
+</html>
